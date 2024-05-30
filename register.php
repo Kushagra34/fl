@@ -14,8 +14,8 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully";
 
-if(isset($_REQUEST['submit'])){
-extract($_REQUEST);
+if(isset($_POST['submit'])){
+extract($_POST);
 
 $query = "insert into candidate";
 
